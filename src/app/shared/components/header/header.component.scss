@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+    .menu {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
