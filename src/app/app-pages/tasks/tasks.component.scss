@@ -2,7 +2,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: calc(100vh - 100px);
 
-    
+    .sub-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 30px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                button {
+                    padding: 10px 15px;
+                    background-color: #4682b4;
+                    border: 0;
+                    color: white;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+
+                    &:hover {
+                        background-color: #246092;
+                        cursor: pointer;
+                    }
+
+                    &:active {
+                        background-color: #024070;
+                    }
+                }
+            }
+        }
+    }
 }

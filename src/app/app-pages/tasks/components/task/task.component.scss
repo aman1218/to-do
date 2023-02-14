@@ -8,6 +8,10 @@
         margin-right: 10px;
         width: 40px;
         height: 40px;
+
+        &:checked + .text-wrap {
+            text-decoration: line-through;
+        }
     }
 
     h3 {

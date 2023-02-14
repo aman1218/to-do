@@ -3,7 +3,7 @@ export class Task {
     taskName: string = '';
     taskDescription: string = '';
     isCompleted: boolean = false;
-    timestamp: number = new Date().getTime()
+    timestamp: number = 0;
 
     constructor (task: {[key: string]: any}) {
         if (task) {
@@ -16,7 +16,7 @@ export class Task {
             }
 
             if(isNaN(this.timestamp = parseInt(task['timestamp']))) {
-                this.timestamp = new Date().getTime();
+                this.timestamp = new Date().getTime() - (Math.random() * 1000000);
             }
         }
     }
